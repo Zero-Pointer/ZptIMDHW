@@ -6,39 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/toast_but"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:onClick="showToast"
-        android:text="Show Toast"
-        app:layout_constraintEnd_toEndOf="parent"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="175dp"
+        android:layout_height="238dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="148dp"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/toast_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toast"
+            android:onClick="showToast"
+            app:backgroundTint="#3F51B5" />
+
+        <Button
+            android:id="@+id/zero_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="zeroFunc"
+            android:text="Zero"
+            app:backgroundTint="#808080" />
+
+        <Button
+            android:id="@+id/count_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="countAdd"
+            android:text="count"
+            app:backgroundTint="#2196F3" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
         android:background="#FFEB3B"
         android:gravity="center"
         android:text="@string/counter_string"
         android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/count_but"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toast_but" />
-
-    <Button
-        android:id="@+id/count_but"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="496dp"
-        android:onClick="countAdd"
-        android:text="Counter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
