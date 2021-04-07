@@ -29,3 +29,11 @@ Toast & Counter 项目
 Intent 项目
 
 [Intent](Lab4)
+
+------
+
+# Week 7
+
+Implicit Intent 项目
+
+[Implicit Intent](Lab5)
