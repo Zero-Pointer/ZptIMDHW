@@ -37,3 +37,12 @@ Intent 项目
 Implicit Intent 项目
 
 [Implicit Intent](Lab5)
+
+------
+
+# Week 8
+
+Droid Cafe 项目
+
+[Droid Cafe](lab6)
+
