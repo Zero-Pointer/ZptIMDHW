@@ -46,3 +46,10 @@ Droid Cafe 项目
 
 [Droid Cafe](lab6)
 
+-----
+
+# Week 9
+
+Droid Cafe-up、TabExperiment、RecyclerView 项目
+
+[Lab7](Lab7)
