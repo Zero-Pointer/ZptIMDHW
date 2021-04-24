@@ -1,20 +1,24 @@
 package com.example.tabexperiment;
 
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
-    int mNumOfTabs;
+    int mNumOfTabs = 0;
 
-    public PagerAdapter(@NonNull FragmentManager fm, int behavior) {
-        super(fm, behavior);
+    public PagerAdapter(FragmentManager fm, int NumOfTabs) {
+        super(fm);
+        this.mNumOfTabs = NumOfTabs;
     }
 
     @NonNull
     @Override
     public Fragment getItem(int position) {
+        Log.d("getItem", "OK");
         switch (position) {
             case 0: return new TabFragment1();
             case 1: return new TabFragment2();
