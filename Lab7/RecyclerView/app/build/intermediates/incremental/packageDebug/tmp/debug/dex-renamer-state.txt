@@ -1,0 +1,4 @@
+#Wed Apr 21 20:50:16 CST 2021
+base.0=E\:\\courseware\\IntelligentMobileDevelopment\\IMD\\Presentation\\Android Developer Fundamentals\\Practices\\Solution_code\\android-fundamentals-apps-v2-master\\RecyclerView\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

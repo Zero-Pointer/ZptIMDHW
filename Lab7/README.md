@@ -2,11 +2,11 @@
 
 ### Part A
 
-[**项目文件夹**](DroidCafe)
+[**项目文件夹**](DroidCafeInput)
 
 效果图：
 
-<img src="img/image-20210421204507929.png" alt="image-20210421204507929" style="zoom:50%;" />
+<img src="img/image-20210427215603594.png" alt="image-20210427215603594" style="zoom:50%;" />
 
 
 
@@ -34,14 +34,12 @@
 
 ### Part C
 
-[**项目文件夹**](DroidCafe)
+[**项目文件夹**](RecyclerView)
 
 效果图：
 
-<img src="img/image-20210421205038398.png" alt="image-20210421205038398" style="zoom:50%;" />![image-20210421205110479](img/image-20210421205110479.png)
+<img src="img/image-20210421205038398.png" alt="image-20210421205038398" style="zoom:50%;" />
 
-<img src="img/image-20210421205038398.png" alt="image-20210421205038398" style="zoom:50%;" />![image-20210421205110479](img/image-20210421205110479.png)
-
-<img src="img/image-20210421205038398.png" alt="image-20210421205038398" style="zoom:50%;" />![image-20210421205110479](img/image-20210421205110479.png)
+<img src="img/image-20210421205110479.png" alt="image-20210421205110479" style="zoom:50%;" />
 
 [**演示视频**]([partC.mp4)
