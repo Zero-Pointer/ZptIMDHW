@@ -16,8 +16,15 @@
 
 package com.example.android.materialme;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.v4.util.Pair;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,7 +38,7 @@ import java.util.ArrayList;
 /***
  * The adapter class for the RecyclerView, contains the sports data.
  */
-class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
+class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>{
 
     // Member variables.
     private ArrayList<Sport> mSportsData;
@@ -90,10 +97,11 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
     }
 
 
+
     /**
      * ViewHolder class that represents each row of data in the RecyclerView.
      */
-    class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         // Member Variables for the TextViews
         private TextView mTitleText;
@@ -112,6 +120,8 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
             mTitleText = itemView.findViewById(R.id.title);
             mInfoText = itemView.findViewById(R.id.subTitle);
             mSportsImage = itemView.findViewById(R.id.sportsImage);
+
+            itemView.setOnClickListener(this);
         }
 
         void bindTo(Sport currentSport){
@@ -119,6 +129,28 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
             mTitleText.setText(currentSport.getTitle());
             mInfoText.setText(currentSport.getInfo());
             Glide.with(mContext).load(currentSport.getImageResource()).into(mSportsImage);
+        }
+
+        @Override
+        public void onClick(View view) {
+            Sport currentSport = mSportsData.get(getAdapterPosition());
+            Intent detailIntent = new Intent(mContext, DetailActivity.class);
+            detailIntent.putExtra("title", currentSport.getTitle());
+            detailIntent.putExtra("image_resource", currentSport.getImageResource());
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+                Log.d("version test", "OK");
+                View sportsImage = itemView.findViewById(R.id.sportsImage);
+                View sportsImageDetail = itemView.findViewById(R.id.sportsImageDetail);
+                Pair<View, String> firstPair = new Pair<View, String>(sportsImage, "activityTransform");
+                Pair<View, String> secondPair = new Pair<View, String>(sportsImageDetail, "activityTransform");
+                Bundle bundle = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext, sportsImage, "activityTransform").toBundle();
+
+                mContext.startActivity(detailIntent, bundle);
+            }else{
+                Log.d("version test", "WRONG");
+                mContext.startActivity(detailIntent);
+
+            }
         }
     }
 }

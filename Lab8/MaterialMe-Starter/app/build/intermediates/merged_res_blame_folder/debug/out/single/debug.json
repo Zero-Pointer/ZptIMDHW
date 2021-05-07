@@ -4,6 +4,10 @@
         "source": "E:\\courseware\\IntelligentMobileDevelopment\\HW\\Lab8\\MaterialMe-Starter\\app\\src\\main\\res\\drawable\\img_soccer.jpg"
     },
     {
+        "merged": "E:\\courseware\\IntelligentMobileDevelopment\\HW\\Lab8\\MaterialMe-Starter\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detail.xml.flat",
+        "source": "E:\\courseware\\IntelligentMobileDevelopment\\HW\\Lab8\\MaterialMe-Starter\\app\\src\\main\\res\\layout\\activity_detail.xml"
+    },
+    {
         "merged": "E:\\courseware\\IntelligentMobileDevelopment\\HW\\Lab8\\MaterialMe-Starter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_tennis.jpg.flat",
         "source": "E:\\courseware\\IntelligentMobileDevelopment\\HW\\Lab8\\MaterialMe-Starter\\app\\src\\main\\res\\drawable\\img_tennis.jpg"
     },
@@ -62,6 +66,10 @@
     {
         "merged": "E:\\courseware\\IntelligentMobileDevelopment\\HW\\Lab8\\MaterialMe-Starter\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "E:\\courseware\\IntelligentMobileDevelopment\\HW\\Lab8\\MaterialMe-Starter\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\courseware\\IntelligentMobileDevelopment\\HW\\Lab8\\MaterialMe-Starter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_reset.xml.flat",
+        "source": "E:\\courseware\\IntelligentMobileDevelopment\\HW\\Lab8\\MaterialMe-Starter\\app\\src\\main\\res\\drawable\\ic_reset.xml"
     },
     {
         "merged": "E:\\courseware\\IntelligentMobileDevelopment\\HW\\Lab8\\MaterialMe-Starter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_swimming.jpg.flat",
