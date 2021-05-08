@@ -48,11 +48,9 @@ public class MainActivity extends AppCompatActivity {
                         Log.d("OnTabSelectedListener", "OK!");
                         viewPager.setCurrentItem(tab.getPosition());
                     }
-
                     @Override
                     public void onTabUnselected(TabLayout.Tab tab) {
                     }
-
                     @Override
                     public void onTabReselected(TabLayout.Tab tab) {
                     }
