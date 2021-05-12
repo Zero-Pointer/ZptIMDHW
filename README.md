@@ -70,3 +70,11 @@ AsyncTask and AsyncTaskLoader 项目
 
 [Lab9](Lab9)
 
+---
+
+# Week 12
+
+Notify 项目
+
+[Lab10](Lab10)
+
