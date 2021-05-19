@@ -44,7 +44,7 @@ Implicit Intent 项目
 
 Droid Cafe 项目
 
-[Droid Cafe](lab6)
+[Droid Cafe](Lab6)
 
 -----
 
